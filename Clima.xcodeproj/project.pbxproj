@@ -58,7 +58,7 @@
 			children = (
 				B49A07B424FBA62B00DE117B /* AppDelegate.swift */,
 				B49A07B624FBA62B00DE117B /* SceneDelegate.swift */,
-				B49A07B824FBA62B00DE117B /* ViewController.swift */,
+				B4DFDB1524FBB4FD00D22A72 /* Controllers */,
 				B4DFDB1424FBB4F000D22A72 /* Views */,
 				B49A07BD24FBA62D00DE117B /* Assets.xcassets */,
 				B49A07C224FBA62D00DE117B /* Info.plist */,
@@ -73,6 +73,14 @@
 				B49A07BF24FBA62D00DE117B /* LaunchScreen.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B4DFDB1524FBB4FD00D22A72 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B49A07B824FBA62B00DE117B /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

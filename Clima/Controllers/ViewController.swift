@@ -9,12 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    // IBOutlets
+    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var weatherImageView: UIImageView!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
+    
+    // Initialise
+    
+    // Override View Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    // IBActions
+    @IBAction func currentLocationPressed(_ sender: UIButton) {}
+    @IBAction func searchPressed(_ sender: UIButton) {}
 }
 

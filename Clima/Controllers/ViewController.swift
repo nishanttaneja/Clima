@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     
     // IBActions
     @IBAction func currentLocationPressed(_ sender: UIButton) {locationManager.requestLocation()}
-    @IBAction func searchPressed(_ sender: UIButton) {}
+    @IBAction func searchPressed(_ sender: UIButton) {searchTextField.resignFirstResponder()}
 }
 
 //MARK:- LocationManagerDelegate
@@ -61,4 +61,17 @@ extension ViewController: WeatherManagerDelegate {
 }
 
 //MARK:- SearchTextFieldDelegate
-extension ViewController: UITextFieldDelegate {}
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {textField.resignFirstResponder()}
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text != "" {return true}
+        else {textField.placeholder = "Enter city name here..."; return false}
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let cityName = textField.text {
+            weatherManager.fetchWeather(forCityName: cityName)
+            textField.text = ""
+            textField.placeholder = "Search City"
+        }
+    }
+}

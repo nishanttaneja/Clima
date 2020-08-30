@@ -1,5 +1,5 @@
 #  Clima
-An iOS Application which fetches current weather of user's present location and the location (city name) provided by the user.
+An iOS Application which fetches weather of user's present location and the location (city name) provided by the user.
 
 ## Technologies
 - <a href="https://developer.apple.com/documentation/uikit"> UIKit </a> - Construct and manage a graphical, event-driven user interface for your iOS or tvOS app.
@@ -9,7 +9,7 @@ An iOS Application which fetches current weather of user's present location and 
     - <a href="https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate"> CLLocationManagerDelegate </a> - The methods that you use to receive events from an associated location manager object.
 
 ## Screenshot
-<img src="Screenshots/HomeScreen.png" width="250">
+<img src="HomeScreen.png" width="250">
 
 ## Credits
 - <a href="https://developer.apple.com/documentation"> Apple Developer Documentation </a>
